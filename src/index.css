@@ -24,7 +24,7 @@ small a {
   border-radius: 20px;
   border: none;
   line-height: 27px;
-  padding: 0px 120px 0px 15px;
+  padding: 0px 15px 0px 15px;
   margin-right: 40px;
 }
 
@@ -107,4 +107,20 @@ li:first-letter {
 
 .forecast-temp-section .forecast-temp-day {
   margin: 0px 26px;
+}
+
+
+@media (max-width: 767px) {
+
+  .forecast-section .forecast-day {
+    margin: 0px 22px;
+  }
+
+  .forecast-icon-section .forecast-icon {
+    margin: 0px 20px;
+  }
+
+  .forecast-temp-section .forecast-temp-day {
+    margin: 0px 21px;
+  }
 }
