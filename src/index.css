@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+small {
+  opacity: 0.7;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+small a {
+  text-decoration: none;
+}
+
+.app-wrapper {
+  max-width: 475px;
+  margin: 0 auto;
+  color: #385170;
+}
+
+.weather-application {
+  margin-bottom: 0;
+  padding: 20px;
+  border: 1px solid #385170;
+  border-radius: 20px;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.search-bar .search-field {
+  border-radius: 20px;
+  border: none;
+  line-height: 25px;
+  padding: 0px 50px 0px 15px;
+  margin-right: 20px;
+}
+
+.search-bar .search-button {
+  border-radius: 20px;
+  border: none;
+  background: white;
+  color: #385170;
+  line-height: 25px;
+  padding: 0px 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.search-bar .search-button:hover {
+  background: #385170;
+  color:white;
+  cursor: pointer;
+  
+}
+
+.overview h1 {
+  color: #081f37;
+  font-size: 34px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.overview ul {
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.overview img {
+  margin-right: 7px;
+  height: 64px;
+  width: 64px;
+}
+
+.overview strong {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.overview .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
 }
