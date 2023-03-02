@@ -1,4 +1,5 @@
 import React from "react";
+import ReactAnimatedWeather from "react-animated-weather";
 
 import './index.css';
 
@@ -40,6 +41,62 @@ export default function Weather() {
             </ul>
             <img src={weatherData.imgUrl} alt={weatherData.description} />
             <strong>3</strong> <span className="units">°C</span>
+</div>
+<div className="forecast-section">
+<span className="forecast-day">Mon</span>
+<span className="forecast-day">Tue</span>
+<span className="forecast-day">Wed</span>
+<span className="forecast-day">Thu</span>
+<span className="forecast-day">Fri</span>
+<div className="forecast-icon-section">
+    <span className="forecast-icon">
+    <ReactAnimatedWeather
+          icon="RAIN"
+          color="grey"
+          size={30}
+          animate={true}
+        />
+    </span>
+    <span className="forecast-icon">
+    <ReactAnimatedWeather
+          icon="CLOUDY"
+          color="grey"
+          size={30}
+          animate={true}
+        />
+    </span>
+    <span className="forecast-icon">
+    <ReactAnimatedWeather
+          icon="CLEAR_DAY"
+          color="grey"
+          size={30}
+          animate={true}
+        />
+    </span>
+    <span className="forecast-icon">
+    <ReactAnimatedWeather
+          icon="WIND"
+          color="grey"
+          size={30}
+          animate={true}
+        />
+    </span>
+    <span className="forecast-icon">
+    <ReactAnimatedWeather
+          icon="FOG"
+          color="grey"
+          size={30}
+          animate={true}
+        />
+    </span>
+    <div className="forecast-temp-section">
+        <span className="forecast-temp-day">11-5</span>
+        <span className="forecast-temp-day">10-5</span>
+        <span className="forecast-temp-day">13-8</span>
+        <span className="forecast-temp-day">10-3</span>
+        <span className="forecast-temp-day">11-6</span>
+    </div>
+</div>
 </div>
 </div>
 <small>
