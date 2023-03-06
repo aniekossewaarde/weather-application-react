@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactAnimatedWeather from "react-animated-weather";
 import axios from "axios";
+import "./Weather.css";
 
 import './index.css';
 
@@ -47,13 +48,14 @@ if (loaded) {
     return (
         <div className="app-wrapper">
         <div className="weather-application">
+         
+            
         <form className="search-bar" onSubmit={handleSubmit}>
             <input
             type="search"
             placeholder="Enter a city..."
             className="search-field"
             onChange={updateCity}
-    
              />
              <input
              type="submit"
@@ -61,6 +63,7 @@ if (loaded) {
              className="search-button"
               />
         </form>
+      
         <div className="overview">
             <h1>{weather.city}</h1>
             <ul>
@@ -68,11 +71,20 @@ if (loaded) {
                 last updated: <span></span>
               </li>
               <li>Description: {weather.description}</li>
-              <li>Humidity: {weather.humidity}%</li>
-                <li>Wind: {weather.wind} km/h</li>
             </ul>
+
+            <div className="row middle-section">
+              <div className="col-6">
             <img src={weather.icon} alt="weather icon" />
             <strong>{weather.temp}</strong> <span className="units">°C</span>
+            </div>
+            <div className="col-6">
+<ul>
+<li>Humidity: {weather.humidity}%</li>
+<li>Wind: {weather.wind} km/h</li>
+</ul>
+            </div>
+            </div>
 </div>
 <div className="forecast-section">
 <span className="forecast-day">Mon</span>

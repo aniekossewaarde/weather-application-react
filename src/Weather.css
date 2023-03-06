@@ -1,0 +1,134 @@
+small {
+    opacity: 0.7;
+  }
+  
+  small a {
+    text-decoration: none;
+  }
+
+  .container {
+    margin-top: 17px;
+  }
+
+  .app-wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+    color: #385170;
+  }
+  
+  .weather-application {
+    margin-bottom: 0px;
+    padding: 20px;
+    border: 1px solid #385170;
+    border-radius: 20px;
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  }
+  
+  .search-bar .search-field {
+    border-radius: 20px;
+    border: none;
+    line-height: 27px;
+    padding: 0px 15px 0px 15px;
+    margin-right: 40px;
+  }
+  
+  .search-bar .search-button {
+    border-radius: 20px;
+    border: none;
+    background: white;
+    color: #385170;
+    line-height: 27px;
+    padding: 0px 25px;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .search-bar .search-button:hover {
+    background: #385170;
+    color:white;
+    cursor: pointer;
+    
+  }
+  
+  .overview h1 {
+    color: #081f37;
+    font-size: 34px;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  
+  .overview ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0px;
+  }
+  
+  .overview .middle-section {
+    margin-top: 45px;
+  }
+
+  li:first-letter {
+    text-transform: capitalize;
+  }
+  
+  .overview img {
+    margin-right: 7px;
+    height: 64px;
+    width: 64px;
+  }
+  
+  .overview strong {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  
+  .overview .units {
+    position: relative;
+    font-size: 16px;
+    top: -34px;
+  }
+  
+  .forecast-section {
+    margin-top: 25px;
+    text-align: center;
+    opacity: 0.8;
+  }
+  
+  .forecast-section .forecast-day {
+    margin: 0px 26px;
+  }
+  
+  .forecast-icon-section {
+    margin-top: 10px;
+  }
+  
+  .forecast-icon-section .forecast-icon {
+    margin: 0px 24px;
+  }
+  
+  .forecast-temp-section {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .forecast-temp-section .forecast-temp-day {
+    margin: 0px 26px;
+  }
+  
+  
+  @media (max-width: 767px) {
+  
+    .forecast-section .forecast-day {
+      margin: 0px 22px;
+    }
+  
+    .forecast-icon-section .forecast-icon {
+      margin: 0px 20px;
+    }
+  
+    .forecast-temp-section .forecast-temp-day {
+      margin: 0px 21px;
+    }
+  }
