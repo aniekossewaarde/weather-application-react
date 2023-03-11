@@ -75,8 +75,11 @@ if (loaded) {
 
             <div className="row middle-section">
               <div className="col-6">
-            <img src={weather.icon} alt="weather icon" />
+            
+            <img src={weather.icon} alt="weather icon" className="float-left" />
+            
             <strong>{weather.temp}</strong> <span className="units">°C</span>
+            
             </div>
             <div className="col-6">
 <ul>
@@ -84,6 +87,7 @@ if (loaded) {
 <li>Wind: {weather.wind} km/h</li>
 </ul>
             </div>
+    
             </div>
 </div>
 <div className="forecast-section">
@@ -191,7 +195,7 @@ if (loaded) {
             </ul>
 
             <div className="row middle-section">
-              <div className="col-6">
+              <div className="col-6 clearfix">
             
             <strong>{weather.temp}</strong> <span className="units"></span>
             </div>
