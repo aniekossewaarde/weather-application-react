@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactAnimatedWeather from "react-animated-weather";
 import axios from "axios";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
 
 import './index.css';
 
@@ -24,6 +25,7 @@ setWeather({
     icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     city: response.data.name,
     description: "Cloudy",
+    date: new Date(response.data.dt * 1000),
 
 })
 }
@@ -68,7 +70,7 @@ if (loaded) {
             <h1>{weather.city}</h1>
             <ul>
               <li>
-                last updated: <span></span>
+                last updated: <span><FormattedDate date={weather.date} /></span>
               </li>
               <li>Description: {weather.description}</li>
             </ul>
@@ -81,7 +83,7 @@ if (loaded) {
             <strong>{weather.temp}</strong> <span className="units">°C</span>
             
             </div>
-            <div className="col-6">
+            <div className="col-6 information">
 <ul>
 <li>Humidity: {weather.humidity}%</li>
 <li>Wind: {weather.wind} km/h</li>
@@ -189,7 +191,7 @@ if (loaded) {
             <h1>{weather.city}</h1>
             <ul>
               <li>
-                last updated: <span></span>
+                last updated: <span><FormattedDate date={weather.date} /></span>
               </li>
               <li>Description: {weather.description}</li>
             </ul>
