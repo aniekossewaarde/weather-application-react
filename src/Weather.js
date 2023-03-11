@@ -182,17 +182,26 @@ if (loaded) {
               />
         </form>
         <div className="overview">
-            <h1></h1>
+            <h1>{weather.city}</h1>
             <ul>
               <li>
                 last updated: <span></span>
               </li>
-              <li>Description:</li>
-              <li>Humidity:  %</li>
-                <li>Wind:  km/h</li>
+              <li>Description: {weather.description}</li>
             </ul>
-            <img src={weatherData.imgUrl} alt="weather icon" />
-            <strong></strong> <span className="units">°C</span>
+
+            <div className="row middle-section">
+              <div className="col-6">
+            
+            <strong>{weather.temp}</strong> <span className="units"></span>
+            </div>
+            <div className="col-6">
+<ul>
+<li>Humidity: {weather.humidity}%</li>
+<li>Wind: {weather.wind} km/h</li>
+</ul>
+            </div>
+            </div>
 </div>
 <div className="forecast-section">
 <span className="forecast-day">Mon</span>
